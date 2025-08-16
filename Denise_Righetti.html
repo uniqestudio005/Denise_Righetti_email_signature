@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Email Signature Creator</title>
+        <style>
+            #ClickButton {
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+                background-color: #fcce13;
+                border: none;
+                border-radius: 50px;
+                padding: 10px 15px;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+                text-align: left;
+            }
+            #ClickButton:hover {
+                background-color: #195997;
+                color: #fff;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+            h1,h4 {
+                font-family: "Poppins", sans-serif;
+                color: #1c1c1c;
+            }
+            .container {
+                border-radius: 5px;
+            }
+            .floating-label-form {
+                max-width: 100%;
+                padding-right: 20px;
+                height: max-content;
+            }
+            .field-name {
+                font-family: "Poppins", sans-serif;
+            }
+            .field-image {
+                font-family: "Poppins", sans-serif;
+                color: #3f51b5de
+            }
+            .form-group {
+                position: relative;
+                margin: 20px 0;
+            }
+            .input-fields {
+                width: 100%;
+                padding: 20px 10px;
+                font-size: 16px;
+                border: none;
+                border-bottom: 1px solid #11111d;
+                background-color: #f5f5f5;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                outline: none;
+                transition: border-color 0.2s, padding-top 0.2s, padding-bottom 0.2s;
+            }
+            .input-fields:focus {
+                border-width: 2px;
+                border-color: #3f51b5de;
+                padding-top: 30px;
+                padding-bottom: 15px;
+                background-color: #d8d8d8;
+            }
+            .field-name {
+                position: absolute;
+                top: 0;
+                left: 10px;
+                font-size: 16px;
+                color: #0009;
+                transition: 0.2s ease all;
+                pointer-events: none;
+                padding: 0 5px;
+                transform: translateY(20px);
+            }
+            .input-fields:focus + .field-name,
+            .input-fields:not(:placeholder-shown) + .field-name,
+            .input-fields[value]:not([value=""]) + .field-name {
+                top: -12px;
+                left: 5px;
+                font-size: 12px;
+                color: #3f51b5de;
+            }
+            .input-fields:not(:placeholder-shown) {
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }
+            .input-fields[value]:not([value=""]) {
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }
+            .input-fields::placeholder {
+                color: transparent;
+            }
+            .input-fields:focus::placeholder {
+                color: #7d7d7d;
+            }
+            .note{
+                font-family: "Poppins", sans-serif;
+                font-size: 13px;
+            }
+            .CheckboxField{
+                font-family: "Poppins", sans-serif;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+<body bgcolor="#11111d" style="background-color: #11111d;margin: 20px 0;">
+    <center>
+        <div class="container" style="max-width: 600px;margin: 0 auto;background-color: #fafafa;padding: 36px">
+            <div style="text-align: left;">
+                <div>
+                    <p class="note">
+                        <strong style="color: red;">Important:&nbsp;&nbsp;</strong>Please open the HTML file or link in a Chrome browser for the best experience.
+                    </p>
+                </div>
+                <div style="margin: 40px 0;">
+                    <h1>HTML Email Signature</h1>
+                </div>
+                <div class="container">
+                    <table style="background-color: #fff;padding: 25px;border-radius: 5px;">
+                        <tr>
+                            <td>
+                                <div id="target">
+                                    <html lang="en">
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <meta name="x-apple-disable-message-reformatting">
+                                            <meta name="apple-mobile-web-app-capable" content="yes">
+                                            <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+                                            <title>Document</title>
+                                            <style>
+                                                p { margin: 0.04px !important; padding: 0 !important; }
+                                                a { color: inherit !important; text-decoration: none !important; }
+                                                img { display: block; border: 0; outline: none; }
+                                                table, tr, td, span { font-family: Helvetica, Arial, sans-serif; }
+                                                [data-ogsc] table, [data-ogsc] td, [data-ogsc] a { color: inherit !important; }
+                                            </style>
+                                        </head>
+                                        <body>
+                                            <table id="signaturehtmlcodes" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;background-color: transparent;">
+                                                <tr>
+                                                    <td>
+                                                        <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+                                                            <tr>
+                                                                <td>
+                                                                    <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+                                                                        <tr>
+                                                                           <td>
+                                                                            <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+                                                                                <tr>
+                                                                                    <td>                                               
+                                                                                        <p style="margin: 0.04px;">
+                                                                                            <img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_Righetti.gif" alt="Headshot" width="145" height="145" border="0" style="width: 145px;height: 145px;max-width: 145px;min-width: 145px;border:0; outline:none; display:block;">
+                                                                                        </p>
+                                                                                    </td> 
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <p>
+                                                                                            <a href="https://calendly.com/savorourcity" target="_blank"><img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/SCHEDULE-A-CALL.png" alt="SCHEDULE-A-CALL" width="140" height="29" border="0" style="padding-top: 12px;height: 29px;max-width: 140px;min-width: 149px;border:0; outline:none; display:block;"></a>
+                                                                                        </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" style="padding-top: 15px;line-height: 1px;">
+                                                                                           <a href="https://www.facebook.com/SavorOurCity/" target="_blank"><img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_FB.png" alt="facebook" width="27" style="display: inline-block;width: 27px;height: 27px;"></a>
+                                                                                           <a href="https://www.instagram.com/savorourcity/" target="_blank"><img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_IG.png" alt="instagram" width="27" style="display: inline-block;width: 27px;height: 27px;"></a>
+                                                                                           <a href="https://www.linkedin.com/company/3791265/admin/" target="_blank"><img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_linkedin.png" alt="linkedin" width="27" style="display: inline-block;width: 27px;height: 27px;"></a>
+                                                                                           <a href="https://www.youtube.com/c/Savorourcity" target="_blank"><img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_YouTube.png" alt="YouTube" width="27" style="display: inline-block;width: 27px;height: 27px;"></a>
+                                                                                           <a href="https://www.pinterest.com/savorourcity/_created/" target="_blank"><img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_P.png" alt="Pinterest" width="27" style="display: inline-block;width: 27px;height: 27px;"></a>
+                                                                                       </td>
+                                                                               </tr>
+                                                                            </table>
+                                                                           </td>
+                                                                            <td style="padding-left: 25px;">
+                                                                                <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;white-space: nowrap;">
+                                                                                    <tr>
+                                                                                        <td style="line-height: 17px;">
+                                                                                            <p style="margin: 0.04px;">
+                                                                                                <img style="width: 275px;height: 39px;max-width: 275px;min-width: 275px;border:0; outline:none; display:block;padding-bottom: 3px;" src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_Righetti_Name.gif" alt="">
+                                                                                            </p>
+                                                                                            <p style="margin: 0.04px;">
+                                                                                                <span style="font-family: Helvetica, Arial, sans-serif;text-decoration: none;color: #000;font-size: 10pt;font-weight: normal;">Founder/CFO (Chief Foodie Officer)</span>
+                                                                                            </p>
+                                                                                            <p style="margin: 0.04px;">
+                                                                                                <span style="font-family: Helvetica, Arial, sans-serif;text-decoration: none;color: #000;font-size: 10pt;font-weight: normal;">CWO. (Chief Wine-O)</span>
+                                                                                            </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td style="padding-top: 10px;">
+                                                                                            <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;white-space: nowrap;white-space: nowrap;line-height: 19px;">
+                                                                                               <tr>
+                                                                                                    <td style="padding-right: 7px;">
+                                                                                                      <p style="margin: 0.04px;">
+                                                                                                          <img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_Icon.png" alt="phone" width="15" height="15" border="0" style="width: 15px;height:15;max-width: 15px;min-width: 15px;border:0; outline:none; display:block;">
+                                                                                                      </p>
+                                                                                                    </td>
+                                                                                                    <td style="line-height: 19px;">
+                                                                                                      <p style="margin: 0.04px;">
+                                                                                                          <a style="text-decoration: none;color: #fff;" href="tel:(954)310-3177" target="_blank"><span style="font-family: Helvetica, Arial, sans-serif;text-decoration: none;color: #000;font-size: 10pt;font-weight: normal;">(954)310-3177</span></a>
+                                                                                                      </p>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                <td style="padding-right: 7px;">
+                                                                                                  <p style="margin: 0.04px;">
+                                                                                                      <img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_Email.png" alt="Email" width="15" height="15" border="0" style="width: 15px;height:15;max-width: 15px;min-width: 15px;border:0; outline:none; display:block;">
+                                                                                                  </p>
+                                                                                                </td>
+                                                                                                <td style="line-height: 19px;">
+                                                                                                  <p style="margin: 0.04px;">
+                                                                                                      <a style="text-decoration: none;color: #fff;" href="mailto:Denise@SavorOurCity.com" target="_blank"><span style="font-family: Helvetica, Arial, sans-serif;text-decoration: none;color: #000;font-size: 10pt;font-weight: normal;">Denise@SavorOurCity.com</span></a>
+                                                                                                  </p>
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                             <tr>
+                                                                                                <td style="padding-right: 7px;">
+                                                                                                  <p style="margin: 0.04px;">
+                                                                                                      <img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Denise_Web.png" alt="Web" width="15" height="15" border="0" style="width: 15px;height:15;max-width: 15px;min-width: 15px;border:0; outline:none; display:block;">
+                                                                                                  </p>
+                                                                                                </td>
+                                                                                                <td style="line-height: 19px;">
+                                                                                                  <p style="margin: 0.04px;">
+                                                                                                      <a style="text-decoration: none;color: #fff;" href="https://www.savorourcity.com/" target="_blank"><span style="font-family: Helvetica, Arial, sans-serif;text-decoration: none;color: #000;font-size: 10pt;font-weight: normal;">www.SavorOurCity.com</span></a>
+                                                                                                  </p>
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                           </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table style="padding-top: 10px;" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+                                                                                                <tr>                                                                            
+                                                                                                    <td>
+                                                                                                        <a style="text-decoration: none;color: #fff;" href="https://www.savorourcity.com" target="_blank"><img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/Savor_Our_City_logo.png" alt="Savor_Our_City_logo" width="96" height="100"></a>
+                                                                                                    </td>
+                                                                                                    <td style="padding-left: 12px;">
+                                                                                                        <a style="text-decoration: none;color: #fff;" href="https://guidetoflorida.com/boca-raton/venue-events/savor-our-city" target="_blank"><img src="https://48448639.fs1.hubspotusercontent-na1.net/hubfs/48448639/BEST_OF_WINNER.png" alt="Savor_Our_City_logo" width="60" height="100"></a>
+                                                                                                    </td>                                                                            
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr> 
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>                                                                                              
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </body>
+                                    </html>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="margin: 30px auto;">
+                    <h4>Step 1: Hit the button below to copy your signature</h4>
+                </div>
+                <div style="margin: 30px auto;">
+                    <p style="margin: auto;">
+                        <span style="font-size: 14px;font-weight: 500;color:#0000008a;font-family: Helvetica, Arial, sans-serif;">Why? - This step will ensure you properly selecting the inner code of your new signature</span>
+                    </p>
+                </div>
+                <div style="margin: 30px auto;">
+                    <button type="button" id="ClickButton" onclick="handleButtonClick()">Click me to Copy Signature</button>
+                </div>
+                <div style="margin: 30px auto;">
+                    <h4>Step 2: Once clicked, the signature will be copied.</h4>
+                    <h4> Step 3: Go to your email signature settings and paste it there.</h4>
+                </div>
+                <div style="margin: 30px auto;">
+                    <p style="margin: auto;">
+                        <span style="font-size: 12px;font-weight: 500;color:#ea0606;font-family: Helvetica, Arial, sans-serif;">Some email clients do not support the copy-and-paste feature. In such cases, you can copy the HTML code by pressing the button below and add it directly to the signature section.</span>
+                    </p>
+                </div>
+                <div style="margin: 30px auto;">
+                    <button id="ClickButton" onclick="copySourceCodeToClipboard()">Click me to Copy HTML Codes</button>
+                </div>
+                <div style="margin: 30px auto;">
+                    <hr>
+                </div>
+                <div style="margin: 30px auto;">
+                    <p style="margin: auto;">
+                        <span style="font-size: 12px;font-weight: 500;color:#11111d;font-family: Helvetica, Arial, sans-serif;">Click the button below to view the installation guide for various email clients.</span>
+                    </p>
+                </div>
+                <div style="margin-top:30px">
+                    <button type="button" id="ClickButton" onclick="handleButtonClickGuide('https://emailsignatures.site/installation-guides-for-various-email-clients')">Installation Guide</button>
+                </div>
+                <div>
+                    <script>
+                        function updateSignature() {
+                            const name = document.getElementById("name").value;
+                            const title = document.getElementById("title").value;
+                            const direct = document.getElementById("direct").value;
+                            const office = document.getElementById("office").value;
+                            const mail = document.getElementById("mail").value;
+                            const linkedin = document.getElementById("linkedin").value;
+                            const instagram = document.getElementById("instagram").value;
+                    
+                            document.getElementById("employeeName").textContent = name;
+                            document.getElementById("employeeTitle").textContent = title;
+                            document.getElementById("employeeDirect").textContent = direct;
+                            document.getElementById("employeeOffice").textContent = office;
+                            document.getElementById("employeeMail").textContent = mail;
+                    
+                            document.getElementById("directLink").href = "tel:" + direct;
+                            document.getElementById("officeLink").href = "tel:" + office;
+                            document.getElementById("mailLink").href = "mailto:" + mail;
+                            document.getElementById("linkedinLink").href = linkedin;
+                            document.getElementById("instagramLink").href = instagram;
+                    
+                        }
+                    
+                        updateSignature();
+                        document.getElementById("title").addEventListener("input", updateSignature);
+                        document.getElementById("name").addEventListener("input", updateSignature);
+                        document.getElementById("direct").addEventListener("input", updateSignature);
+                        document.getElementById("office").addEventListener("input", updateSignature);
+                        document.getElementById("mail").addEventListener("input", updateSignature);
+                        document.getElementById("linkedin").addEventListener("input", updateSignature);
+                        document.getElementById("instagram").addEventListener("input", updateSignature);
+                    </script>
+                    <script>
+                        function changeImage() {
+                            const selector = document.getElementById("imageSelector");
+                            const image = document.getElementById("headshotImage");
+                            image.src = selector.value;
+                            document.getElementById("customImageURL").value = ""; // Clear custom URL input
+                        }
+                    
+                        function updateImageFromURL() {
+                            const customURL = document.getElementById("customImageURL").value;
+                            const image = document.getElementById("headshotImage");
+                            if (customURL) {
+                                image.src = customURL;
+                                document.getElementById("imageSelector").value = ""; // Clear dropdown selection
+                            }
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function selectText(node) {
+                            node = document.getElementById(node);
+                
+                            if (document.body.createTextRange) {
+                                const range = document.body.createTextRange();
+                                range.moveToElementText(node);
+                                range.select();
+                            } else if (window.getSelection) {
+                                const selection = window.getSelection();
+                                const range = document.createRange();
+                                range.selectNodeContents(node);
+                                selection.removeAllRanges();
+                                selection.addRange(range);
+                            } else {
+                                console.warn("Could not select text in node: Unsupported browser.");
+                            }
+                        }
+                
+                        function copyToClipboard(node) {
+                            selectText(node);
+                
+                            try {
+                                const successful = document.execCommand('copy');
+                                if (successful) {
+                                    alert('Signature copied to clipboard.');
+                                } else {
+                                    console.warn('Copy command was unsuccessful.');
+                                }
+                            } catch (err) {
+                                console.error('Failed to copy text.', err);
+                            }
+                        }
+                
+                        function handleButtonClick() {
+                            copyToClipboard("target");
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function copySourceCodeToClipboard() {
+                            const sourceCode = document.getElementById("signaturehtmlcodes").outerHTML;
+                            const tempTextarea = document.createElement('textarea');
+                            tempTextarea.value = sourceCode;
+                            document.body.appendChild(tempTextarea);
+                            tempTextarea.select();
+                            document.execCommand('copy');
+                            document.body.removeChild(tempTextarea);
+                            alert("HTML source code copied to clipboard!");
+                        }
+                    </script>
+                    <script>
+                        function handleButtonClickGuide(url) {
+                        window.open(url, '_blank');
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
